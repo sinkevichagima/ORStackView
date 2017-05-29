@@ -30,6 +30,15 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self _setup];
+    }
+    return self;
+}
+
 - (instancetype)init
 {
     return [self initWithFrame:CGRectZero];
